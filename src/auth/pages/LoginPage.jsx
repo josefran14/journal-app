@@ -2,6 +2,7 @@ import {Link as RouterLink} from "react-router-dom"
 import { Google } from "@mui/icons-material"
 import { Button, Grid, Link, TextField, Typography } from "@mui/material"
 import { AuthLayout } from "../layout/AuthLayout"
+import { Footer } from "../layout/Footer"
 
 export const LoginPage = () => {
   return (
@@ -58,6 +59,7 @@ export const LoginPage = () => {
 
       </form>
      </AuthLayout>
+     <Footer/>
     </>
   )
 }
