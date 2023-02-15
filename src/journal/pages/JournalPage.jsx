@@ -1,11 +1,15 @@
 import { Typography } from "@mui/material";
+import { JournalLayout } from "../layout/JournalLayout";
 
 export const JournalPage = () => {
   return (
-    <>
-      <Typography variant="h1">JournalPage</Typography>
-      {/* <Button variant="contained" sx={{bgcolor: "red", color: 'green'}}>Text</Button>
-    <Box bgcolor="blue"><p>Oliver</p></Box> */}
-    </>
+    <JournalLayout>
+
+      <Typography>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores reprehenderit dignissimos ratione eaque excepturi praesentium consequatur architecto illum doloremque distinctio, eligendi et officiis recusandae voluptas ex voluptatem similique porro sequi!</Typography>
+
+      {/* NothingSelected */}
+      {/* NoteView */}
+
+    </JournalLayout>
   );
 };
