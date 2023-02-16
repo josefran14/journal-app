@@ -1,7 +1,7 @@
 import { StarOutline } from "@mui/icons-material"
 import { Grid, Typography } from "@mui/material"
 
-export const NothingSelectedView = () => {
+export const NothingSelectedView = ({drawerWidth}) => {
   return (
     <Grid 
      container
@@ -9,7 +9,13 @@ export const NothingSelectedView = () => {
      direction= "column"
      alignItems= "center"
      justifyContent= "center"
-     sx={{minHeight: "calc(100vh - 110px)", backgroundColor: "primary.main", borderRadius: 3}}
+     sx={{
+      minHeight: "calc(100vh - 110px)", 
+      backgroundColor: "primary.main", 
+      borderRadius: 3,
+      width: { sm:`calc(100% - ${drawerWidth}px)`},
+      ml: {sm: `${drawerWidth}px`}
+    }}
      >
 
         <Grid item xs={12}>
